@@ -1,0 +1,108 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Add flexbox */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px; /* Increase font size */
+}
+
+body {
+    background: url('/assets/3.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+button {
+    padding: 12px 24px; /* Increase padding */
+    margin-right: 10px;
+    background-color: #007bff; /* Change button background color */
+    color: white;
+    border: none;
+    font-size: 18px; /* Increase font size */
+    border-radius: 25px; /* Increase border radius */
+    margin-bottom: 15px; /* Increase margin */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 200px; /* Set fixed width */
+}
+
+button:hover {
+    background-color: #0056b3; /* Change button hover background color */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 22px);
+    padding: 12px; /* Increase padding */
+    margin-bottom: 15px; /* Increase margin */
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Increase border radius */
+    font-size: 18px; /* Increase font size */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff; /* Change focus border color */
+}
+
+#addProductForm,
+#displayProductForm,
+#updateProductForm,
+#deleteConfirmation {
+    margin-top: 30px; /* Increase top margin */
+}
+
+#addProductForm,
+#displayProductForm,
+#updateProductForm {
+    display: none;
+}
+
+#deleteConfirmation {
+    display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px; /* Increase padding */
+    }
+
+    button {
+        width: 100%; /* Set full width */
+        margin-bottom: 20px; /* Increase margin */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        margin-bottom: 20px; /* Increase margin */
+    }
+}

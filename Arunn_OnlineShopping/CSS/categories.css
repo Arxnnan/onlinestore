@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('/assets/2.jfif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px; /* Adjust border-radius for a softer shape */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"],
+select {
+    width: calc(100% - 20px); /* Adjust width to allow for padding */
+    padding: 10px;
+    margin: 10px auto; /* Center the input/select horizontally */
+    display: block; /* Ensure each input/select is on its own line */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+button {
+    width: 200px; /* Adjust button width as needed */
+    padding: 10px;
+    background-color: #FF9900; /* Change button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFAD33; /* Change button color on hover */
+}
+
+
+#categoryList {
+    margin-top: 20px;
+}
+
+#categoryList h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
