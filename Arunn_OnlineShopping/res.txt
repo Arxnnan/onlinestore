@@ -1,1 +1,0 @@
-https://dev.azure.com/arunnthiayagarajan/OnlineShoppingArunn/_git/OnlineShopping.git?path=/HTML/index.html
