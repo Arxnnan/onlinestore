@@ -1,0 +1,32 @@
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: |
+    echo Installing dependencies
+    # Assuming you have a build process, e.g., npm install for Node.js projects
+    # npm install
+  displayName: 'Install dependencies'
+
+- script: |
+    echo Building the project
+    # Run build commands if you have any (e.g., npm run build for a Node.js project)
+    # npm run build
+  displayName: 'Build Project'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.SourcesDirectory)'
+    artifact: 'webapp'
+    publishLocation: 'pipeline'
+  displayName: 'Publish Artifact'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'your-service-connection'
+    appName: 'prp'
+    package: '$(Pipeline.Workspace)/webapp'
+  displayName: 'Deploy to Azure Web App'
